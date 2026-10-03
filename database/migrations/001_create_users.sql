@@ -1,0 +1,7 @@
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password TEXT NOT NULL,
+    role VARCHAR(20) NOT NULL DEFAULT 'mahasiswa',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
